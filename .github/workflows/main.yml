@@ -1,0 +1,20 @@
+name: myworkflow
+on:
+  push:
+    branches:
+      - main
+      - 'features/**'
+jobs:
+ myfirstjob:
+  name: myjob
+  runs-on: myrun
+  steps:
+   - name: mysteps
+     env:
+      MY_VAR: myfirstenv
+      MESSAGE: we are a team
+     run: echo myrun
+     
+   
+     
+     
