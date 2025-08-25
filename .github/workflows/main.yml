@@ -11,9 +11,10 @@ jobs:
   steps:
    - name: mysteps
      env:
-      MY_VAR: myfirstenv
+      CHANDAN: hi good morning
       MESSAGE: we are a team
-     run: echo myrun
+     run: |
+       "echo $env:CHANDAN $env:MESSAGE
      
    
      
